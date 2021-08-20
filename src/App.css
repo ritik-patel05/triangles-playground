@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+	background-color: #90caf9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header > div {
+	display: flex;
+	flex-grow: 1;
+	padding: 1rem;
+	max-width: 1150px;
+	margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header > h1 {
+	font-size: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+header nav {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link {
+	padding-right: 1rem;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.nav-link,
+.nav-head {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.introduction {
+	margin-top: 2rem;
+}
+
+label {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+	display: block;
+}
+
+input {
+	padding: 0.3rem;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+	border-color: #90caf9;
+	border-style: solid;
+}
+
+input[type='radio'] {
+	margin-right: 0.5rem;
+}
+
+button {
+	background-color: #90caf9;
+	padding: 0.5rem 1rem;
+	margin-top: 1rem;
+	border-width: 0;
+	border-radius: 0.5rem;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+
+.result {
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding: 1rem;
+}
+
+.question-container {
+	padding: 1rem;
+	margin: 0.5rem;
+}
+
+.question-container > h2 {
+	padding: 0.5rem;
 }
