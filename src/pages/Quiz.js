@@ -9,10 +9,10 @@ const Quiz = () => {
 
 	const submitForm = () => {
 		let score = 0;
-		if (ques1 === '90°') {
+		if (ques1 === correctAns[0]) {
 			++score;
 		}
-		if (ques2 === 'right angled') {
+		if (ques2 === correctAns[1]) {
 			++score;
 		}
 		setResult(`Your score is ${score}`);
